@@ -110,8 +110,7 @@ onload = function () {
         }
 
         // Setting the new values of global variables
-        src = 1;
-        dst = V;
+       src = 1;
         curr_data = {
             nodes: nodes,
             edges: edges
@@ -122,7 +121,8 @@ onload = function () {
         // Create new data and display the data
         createData();
         network.setData(curr_data);
-        temptext2.innerText = 'Find least time path from '+cities[src-1]+' to '+cities[dst-1];
+        temptext2.innerText = 'Find least time path from Jamshedpur to Destination';
+        // +cities[dst-1];
         temptext.style.display = "inline";
         temptext2.style.display = "inline";
         container2.style.display = "none";
@@ -131,6 +131,11 @@ onload = function () {
 
     solve.onclick = function () {
         // Create graph from data and set to display
+     
+        // dst = V;
+        dst=parseInt(document.getElementById("destination").value);
+        console.log(dst);
+        console.log(typeof(dst));
         temptext.style.display  = "none";
         temptext2.style.display  = "none";
         container2.style.display = "inline";
@@ -255,4 +260,5 @@ onload = function () {
     }
 
     genNew.click();
+    container.click();
 };
