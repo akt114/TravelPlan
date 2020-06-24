@@ -71,7 +71,7 @@ onload = function () {
                 }
                 // Seeing if an edge between these two vertices already exists
                 // And if it does then of which kind
-                let works = 0;, 0
+                let works = 0;
                 for(let j=0;j<edges.length;j++){
                     if(edges[j]['from']===n1 && edges[j]['to']===n2) {
                         if(edges[j]['type']===0)
