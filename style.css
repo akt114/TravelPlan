@@ -41,3 +41,12 @@ body {
     margin:auto;
     display:block;
 }
+#srce{
+   margin-left:25%;
+    /* margin-right :25%; */
+}
+#dest{
+ 
+    margin-left :25%;
+
+}

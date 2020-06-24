@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
 
-       Least Time Travel Plan Visualizer
+      Travel Plan Visualizer
        
 
     </nav>
@@ -40,14 +40,39 @@
         <br>
         <button type="button" class="btn btn-danger" id="generate-graph">Get New Map</button>
         <br>
-        <select id="destination">
-    <option value="4">Goa</option>
-    <option value="6">Pune</option>
-    <option value="5">Kanpur</option>
-    <option value="2">Mumbai</option>
-  </select>
+       <span id="srce"> 
+                <a>Enter Source</a>
+                <select id="source">
+                <option value="" disabled selected="selected" hidden>Choose Source</option>
+                <option value="1">Jamshedpur</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Chennai</option>
+                <option value="4">Goa</option>
+                <option value="5">Kanpur</option>
+                <option value="6">Pune</option>
+                <option value="7">Hyderabad</option>
+                <option value="8">Bangalore</option>
+                <option value="9">Delhi</option>
+                <option value="10">Kolkata</option>
+                </select>
+        </span>
+          <span id="dest">
+          <a>Enter Destination</a>
+                <select id="destination">
+                <option value="" disabled selected="selected" hidden>Choose Destination</option>
+                <option value="1">Jamshedpur</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Chennai</option>
+                <option value="4">Goa</option>
+                <option value="5">Kanpur</option>
+                <option value="6">Pune</option>
+                <option value="7">Hyderabad</option>
+                <option value="8" default>Bangalore</option>
+                <option value="9">Delhi</option>
+                <option value="10">Kolkata</option>
+                </select>
+        </span>
         <button type="button" class="btn btn-success" id="solve">Solve</button>
     </div>
 </body>
-
 </html>

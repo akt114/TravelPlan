@@ -7,7 +7,7 @@ onload = function () {
     const solve = document.getElementById('solve');
     const temptext = document.getElementById('temptext');
     const temptext2 = document.getElementById('temptext2');
-    const cities = ['Jamshedpur', 'Mumbai', 'Gujarat', 'Goa', 'Kanpur', 'Pune', 'Hyderabad', 'Bangalore', 'Gangtok', 'Mumbai'];
+    const cities = ['Jamshedpur', 'Mumbai', 'Chennai', 'Goa', 'Kanpur', 'Pune', 'Hyderabad', 'Bangalore', 'Delhi', 'Kolkata'];
 
     // initialise graph options
     const options = {
@@ -110,7 +110,7 @@ onload = function () {
         }
 
         // Setting the new values of global variables
-       src = 1;
+    //    src = 1;
         curr_data = {
             nodes: nodes,
             edges: edges
@@ -121,7 +121,7 @@ onload = function () {
         // Create new data and display the data
         createData();
         network.setData(curr_data);
-        temptext2.innerText = 'Find least time path from Jamshedpur to Destination';
+        temptext2.innerText = 'Find least time path from Source to Destination';
         // +cities[dst-1];
         temptext.style.display = "inline";
         temptext2.style.display = "inline";
@@ -133,6 +133,7 @@ onload = function () {
         // Create graph from data and set to display
      
         // dst = V;
+        src=parseInt(document.getElementById("source").value);
         dst=parseInt(document.getElementById("destination").value);
         console.log(dst);
         console.log(typeof(dst));
